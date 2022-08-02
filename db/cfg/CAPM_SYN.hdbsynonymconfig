@@ -1,0 +1,16 @@
+{
+    "CAPM_SYN_SYN_MARA": {
+        "target": {
+            "object": "MARA",
+            "schema.configure": "logical-hana_syn-grantor/schema"
+        }        
+    },
+
+    "CAPM_SYN_SYN_EMPLOYEES": {
+        "target": {
+            "object": "com.partha.testhana1.TB::EMPLOYEES",
+            "schema.configure": "logical-hana_syn-grantor/schema"
+        }        
+    }
+
+}
