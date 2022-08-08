@@ -2,12 +2,12 @@
     "logical-hana_syn-grantor" : {
       "object_owner" : {
         "container_roles" : [
-            "com.partha.testhana1::ZPARHANAHDI_access_g#"
+            "com.hdibasics::hdiaccess_g#"
         ]
       },
       "application_user" : {
         "container_roles" : [
-            "com.partha.testhana1::ZPARHANAHDI_access"
+            "com.hdibasics::hdiaccess"
         ]
       }
     }

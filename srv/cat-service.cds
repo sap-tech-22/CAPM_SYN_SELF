@@ -1,8 +1,8 @@
 using CAPM_SYN as my from '../db/data-model';
 
 service CatalogService {
-    // @readonly entity Books as projection on my.Books;
-    entity materials as projection on my.v_materials;
-    entity materials_syn as projection on my.syn_MARA;
-    entity employees as projection on my.syn_EMPLOYEES;
+    entity students as projection on my.syn_students
+    entity customers as projection on my.v_customer;
+    entity customers_syn as projection on my.syn_kna1;
+    entity materials as projection on my.syn_mara;
 }

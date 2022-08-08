@@ -1,28 +1,31 @@
 namespace CAPM_SYN;
 
-// entity Books {
-//   key ID : Integer;
-//   title  : String;
-//   stock  : Integer;
-// }
+@cds.persistence.exists
+entity syn_students
+{
+    key STUDENTID : Integer;
+    FIRSTNAME : String;
+	LASTNAME : String;
+};
 
 @cds.persistence.exists
-entity syn_MARA {
-  key matnr : String(3);
-  ernam  : String(12);
-}
+entity syn_kna1
+{
+    key KUNNR : String(10);
+    NAME1 : String(35);
+	LAND1 : String(3);
+};
 
-view v_materials as
+@cds.persistence.exists
+entity syn_mara
+{
+    key MATNR : String;
+    ERNAM : String;
+	MTART : String;
+};
+
+view v_customer as 
     select 
-    key matnr as matnr,
-        ernam as ernam
-    from syn_MARA;
-
-@cds.persistence.exists
-entity syn_EMPLOYEES {
-  key personid : Integer;
-  firstname  : String(255);
-  lastname  : String(255);
-  address  : String(255);
-  phone  : String(15);
-}
+    key KUNNR as kunnr,
+    NAME1 as name1 
+    from syn_kna1;

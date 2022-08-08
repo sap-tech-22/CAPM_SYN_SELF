@@ -1,16 +1,23 @@
 {
-    "CAPM_SYN_SYN_MARA": {
+    "CAPM_SYN_SYN_STUDENTS": {
         "target": {
-            "object": "MARA",
+            "object": "com.hdibasics.TB::student",
             "schema.configure": "logical-hana_syn-grantor/schema"
         }        
     },
 
-    "CAPM_SYN_SYN_EMPLOYEES": {
+    "CAPM_SYN_SYN_KNA1": {
         "target": {
-            "object": "com.partha.testhana1.TB::EMPLOYEES",
+            "object": "TARGET_KNA1",
+            "schema.configure": "logical-hana_syn-grantor/schema"
+        }        
+    },
+    "CAPM_SYN_SYN_MARA": {
+        "target": {
+            "object": "com.hdibasics.VT::VT_MARA",
             "schema.configure": "logical-hana_syn-grantor/schema"
         }        
     }
+
 
 }

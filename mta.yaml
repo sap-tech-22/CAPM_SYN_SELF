@@ -63,7 +63,7 @@ resources:
   - name: HANA_SYN-grantor
     type: org.cloudfoundry.existing-service
     parameters:
-     service-name: HANA_SYN
+     service-name: hdi_hanabasic
     properties:
      hana_syn-grantor-service: ${service-name}
 ##---------------------------------------------------------     
